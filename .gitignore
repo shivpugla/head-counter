@@ -1,0 +1,32 @@
+# Backend logs (generated at runtime)
+backend/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.env
+venv/
+.venv/
+
+# YOLO model weights
+*.pt
+*.onnx
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Vite
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

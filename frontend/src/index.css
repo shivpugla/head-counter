@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ============================================================
+   Design Tokens
+   ============================================================ */
+:root {
+  /* Colors */
+  --bg-primary:    #0a0e1a;
+  --bg-secondary:  #111827;
+  --bg-card:       #1a2035;
+  --bg-card-hover: #212b45;
+  --bg-glass:      rgba(26, 32, 53, 0.72);
+
+  --accent:        #00e68a;
+  --accent-dim:    #00cc7a;
+  --accent-glow:   rgba(0, 230, 138, 0.25);
+  --accent-soft:   rgba(0, 230, 138, 0.08);
+
+  --text-primary:  #f0f4ff;
+  --text-secondary:#8892b0;
+  --text-muted:    #5a6480;
+
+  --border:        rgba(255,255,255,0.06);
+  --border-accent: rgba(0, 230, 138, 0.3);
+
+  --danger:        #ff5c5c;
+  --warning:       #ffb84d;
+
+  /* Sizing */
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+
+  /* Shadows */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.18);
+  --shadow-md:  0 8px 30px rgba(0,0,0,0.3);
+  --shadow-lg:  0 16px 60px rgba(0,0,0,0.45);
+  --shadow-glow:0 0 40px var(--accent-glow);
+}
+
+/* ============================================================
+   Reset & Base
+   ============================================================ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ============================================================
+   Scrollbar
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
